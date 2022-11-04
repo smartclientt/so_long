@@ -1,0 +1,21 @@
+1- windows  (width + lenth)
+2- put img to windows (print map)
+3- holdi keys (a-s-d-w) 
+4- close prg (esc - buton x - collect all coins and exit)
+5-
+
+parsing :
+-file: .ber
+-map dayra b 1
++ exist 1E - 1P - au moin 1C 
++ map recrangle
+
+11111111111
+10000000E01
+11111011001
+10C0000C0P1
+11111111111
+
+check_map :
+	- join all line from map to a map variable (char *map)
+	- 
