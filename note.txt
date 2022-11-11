@@ -2,7 +2,6 @@
 2- put img to windows (print map)
 3- holdi keys (a-s-d-w) 
 4- close prg (esc - buton x - collect all coins and exit)
-5-
 
 parsing :
 -file: .ber
@@ -18,4 +17,8 @@ parsing :
 
 check_map :
 	- join all line from map to a map variable (char *map)
-	- 
+	- ...
+
+After building the map :
+	- get the player position (index x, index y)
+	- check case of free space in the map

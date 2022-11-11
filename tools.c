@@ -6,7 +6,7 @@
 /*   By: shbi <shbi@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 18:06:17 by shbi              #+#    #+#             */
-/*   Updated: 2022/11/03 22:58:24 by shbi             ###   ########.fr       */
+/*   Updated: 2022/11/11 02:25:57 by shbi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,23 @@ int	map_height(char **map)
 	while (map[i])
 		i++;
 	return (i - 1);
+}
+
+void	get_coins_nbr(t_info *info)
+{
+	int	x;
+	int	y;
+
+	x = 0;
+	while (info->map[x])
+	{
+		y = 0;
+		while (info->map[x][y])
+		{
+			if (info->map[x][y] == 'C')
+				info->coins_nbr++;
+			y++;
+		}
+		x++;
+	}
 }
